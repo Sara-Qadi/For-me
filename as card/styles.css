@@ -8,34 +8,32 @@ body {
     font-family: 'Bahnschrift light', sans-serif;
     background-color: hsl(30, 38%, 92%);
     display: flex;
-    height: 100vh; 
-    border: 5px solid hsl(158, 36%, 37%);
-    border-radius: 15px;
-    padding: 10px; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 700px;
+    display: flex;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-.left-section, .right-section {
+.product-image {
     width: 50%;
-}
-
-.product {
-    width: 100%;
-    height: 100%; 
     object-fit: cover;
-    border-radius: 15px; 
-    overflow: hidden; 
 }
 
-.right-section {
+.card{
+    padding: 20px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
 }
-
 .type {
     font-size: 15px;
     color: hsl(228, 12%, 48%);
@@ -45,16 +43,16 @@ body {
 }
 
 .title {
-    font-family: 'cooper black', sans-serif;
-    font-size: 40px;
+    font-family: 'Arial rounded MT Bold', sans-serif;
+    font-size: 30px;
     color: hsl(212, 21%, 14%);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.text {
-    font-size: 20px;
+.text{
+    font-size: 0.9rem;
     color: hsl(228, 12%, 48%);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .price {
@@ -71,7 +69,7 @@ body {
     font-family: 'Bill MT', sans-serif;
 }
 
-.old {
+.old{
     font-size: 18px;
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
@@ -92,13 +90,13 @@ body {
     margin-top: 20px;
 }
 
+
 .add:hover {
     background-color: hsl(158, 36%, 25%);
 }
 
-.icon {
-    width: 20px; 
-    height: 20px; 
-    vertical-align: middle;
-    margin-right: 5px; 
+.store-icon {
+    width: 24px;
+    height: 24px; 
+    margin-right: 8px; 
 }
